@@ -1,0 +1,21 @@
+<p>
+  client-list-view works!
+
+</p>
+
+<div>
+  <ul>
+    <li *ngFor="let user of users">
+      <a href="#{{user.id}}"  (click)="details(user)">{{user.name}}</a>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="selectedUser">
+  <h2>User details: {{selectedUser.name}}</h2>
+  <ul>
+    <li *ngFor="let topic of selectedUser.topics" >
+      {{topic.subject}}
+    </li>
+  </ul>
+</div>
