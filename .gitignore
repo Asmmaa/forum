@@ -11,7 +11,7 @@ node_modules/
 target/
 
 # IDEs and editors
-.idea
+.idea/
 out/
 .project
 .classpath
